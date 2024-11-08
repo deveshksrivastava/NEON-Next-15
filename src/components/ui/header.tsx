@@ -2,6 +2,7 @@
 
 import { HomeIcon, File, UsersRound } from 'lucide-react';
 import Link from 'next/link';
+import { ModeToggle } from '@/components/ModeToggle';
 
 import { NavButton } from '@/components/NavButton';
 
@@ -27,7 +28,7 @@ export function Header() {
 
                     <NavButton href="/customers" label="Customers" icon={UsersRound} />
 
-                    {/* <ModeToggle /> */}
+                    <ModeToggle />
 
                 </div>
 
