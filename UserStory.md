@@ -20,3 +20,29 @@
 18. [ ] Desktop mode is most important but the app should be usable on tablet devices as well. 
 19. [ ] Light / Dark mode option requested by employees 
 20. [ ] Expects quick support if anything goes wrong with the app
+
+
+
+### Video to refer to -:
+✅ [ Youetube Next.js Full Stack Project w/ Nextjs 15 & React 19 tutorials](https://www.youtube.com/watch?v=djDgTYrFMAY&t=559s).
+✅ [ Github](https://github.com/gitdagray/nextjs-full-stack-project).
+
+- [x] (0:00:00) Intro
+- [x] (0:01:11) Tech Stack Overview
+- [x] (0:02:07) Prerequisite Skills
+- [x] (0:02:37) User Stories
+- [x] (0:07:17) Installing Next.js 15 & React 19
+- [x] (0:10:46) Installing ShadCN/ui
+- [x] (0:17:24) Background Image with Tailwind
+- [x] (0:19:48) Business Card Homepage
+- [x] (0:27:49) Routing Groups, Layouts & Templates
+- [x] (0:32:02) Page Routes
+- [x] (0:34:00) Header & Navigation
+- [x] (0:48:43) Custom Animations with Tailwind
+- [x] (0:52:30) Light & Dark Mode with ShadCN/ui
+- [Not Done] (1:01:45) Sentry Set Up
+- [Not Done] (1:04:31) Sentry: Alternate Manual Set Up for Next.js 15 RC
+- [x] (1:14:56) Creating error and global-error files
+- [Not Done] (1:20:56) Sentry Alerts & Logs
+- [x] (1:22:05) 404 Not Found page
+- [x] (1:27:12) Next.js Metadata

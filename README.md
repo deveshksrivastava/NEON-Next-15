@@ -67,7 +67,7 @@ npm run build
 
 👉 [My Courses](https://courses.devesh.codes/)
 
-✅ [Check out my YouTube Channel with hundreds of tutorials](https://www.youtube.com/devesh).
+✅ [Check out my YouTube Channel with hundreds of tutorials](https://www.youtube.com/watch?v=djDgTYrFMAY&t=559s).
 
 🚩 [Subscribe to my channel](https://bit.ly/3nGHmNn)
 
@@ -90,7 +90,7 @@ npm run build
 
 Steps
  - Install next.js 15 with react 19 rc
- ```
+```
     npx create-next-app@latest
     Need to install the following packages:
     create-next-app@15.0.2
@@ -105,9 +105,7 @@ Steps
     √ Would you like to use Turbopack for next dev? ... No / Yes
     √ Would you like to customize the import alias (@/* by default)? ... No / Yes
     Creating a new Next.js app in D:\sites\Mandir-Next.js\next15-repair-shop.
-    ```
+```
  -  npx shadcn@latest init
  -  npm i @radix-ui/react-slot --legacy-peer-dep
-
-
 
