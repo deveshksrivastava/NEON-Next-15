@@ -7,8 +7,8 @@
 5. [ ] Provide easy navigation & search for customers & tickets 
 6. [ ] Provide a logout option 
 7. [ ] Require users to login at least once per week
-8. [ ] Provide a way to remove employee access asap if needed 
-9. [ ] Customers have an ID, full address, phone, email & notes
+8. [x] Provide a way to remove employee access asap if needed 
+9. [x] Customers have an ID, full address, phone, email & notes
 10. [ ] Tickets have an ID, title, notes, created & updated dates
 11. [ ] Tickets are either OPEN or COMPLETED 
 12. [ ] Tickets are assigned to specific employees 
@@ -18,12 +18,12 @@
 16. [ ] Employees can only edit their assigned tickets  
 17. [ ] Managers and Admins can view, edit, and delete all tickets 
 18. [ ] Desktop mode is most important but the app should be usable on tablet devices as well. 
-19. [ ] Light / Dark mode option requested by employees 
+19. [x] Light / Dark mode option requested by employees 
 20. [ ] Expects quick support if anything goes wrong with the app
 
 
 
-### Video to refer to -:
+### Part1: Video to refer to -:
 ✅ [ Youetube Next.js Full Stack Project w/ Nextjs 15 & React 19 tutorials](https://www.youtube.com/watch?v=djDgTYrFMAY&t=559s).
 ✅ [ Github](https://github.com/gitdagray/nextjs-full-stack-project).
 
@@ -49,27 +49,27 @@
 
 
 
-# Next.js + PostgreSQL + Drizzle ORM - Nextjs Full Stack Project
+### Part2: Next.js + PostgreSQL + Drizzle ORM - Nextjs Full Stack Project
  🔗 Course Resources: https://github.com/gitdagray/nextjs-full-stack-project
 
  🔗 Course Youtube: [link](https://www.youtube.com/watch?v=tiSm8ZjFQP0)
 
 Next.js + PostgreSQL + Drizzle ORM - Nextjs Full Stack Project
 
-- [ ] (0:00:00) Intro
-- [ ] (0:01:12) Tech Stack
-- [ ] (0:01:32) User Stories Checklist
-- [ ] (0:04:06) Create a Free Neon Account & Project
-- [ ] (0:09:45) Upgrading to Ne t.js 15 Stable Version
-- [ ] (0:13:21) Installing Drizzle ORM with Neon Postgres
-- [ ] (0:15:55) Create a database connection
-- [ ] (0:19:27) Create database table schemas
-- [ ] (0:27:55) Define table relationships
-- [ ] (0:30:56) Create a migration function
-- [ ] (0:34:30) Create the drizzle config
-- [ ] (0:36:49) Add scripts to package.json
-- [ ] (0:37:55) Generate and Migrate database changes
-- [ ] (0:40:18) Adding Data
+- [x] (0:00:00) Intro
+- [x] (0:01:12) Tech Stack
+- [x] (0:01:32) User Stories Checklist
+- [x] (0:04:06) Create a Free Neon Account & Project
+- [x] (0:09:45) Upgrading to Ne t.js 15 Stable Version
+- [x] (0:13:21) Installing Drizzle ORM with Neon Postgres
+- [x] (0:15:55) Create a database connection
+- [x] (0:19:27) Create database table schemas
+- [x] (0:27:55) Define table relationships
+- [x] (0:30:56) Create a migration function
+- [x] (0:34:30) Create the drizzle config
+- [x] (0:36:49) Add scripts to package.json
+- [x] (0:37:55) Generate and Migrate database changes
+- [x] (0:40:18) Adding Data
 
 📚 Tutorial References:
 🔗 Next.js: https://nextjs.org/
