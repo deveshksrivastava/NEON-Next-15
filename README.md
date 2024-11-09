@@ -109,3 +109,13 @@ Steps
  -  npx shadcn@latest init
  -  npm i @radix-ui/react-slot --legacy-peer-dep
 
+
+## Neon Database Setup
+
+```
+ -   npm i drizzle-orm @neondatabase/serverless --legacy-peer-dep
+ -   npm i -D drizzle-kit tsx dotenv --legacy-peer-dep
+ - https://console.neon.tech/app/projects/red-sea-65341444/quickstart (DATA BASE LINK)
+ - npm run db:genrate
+
+```

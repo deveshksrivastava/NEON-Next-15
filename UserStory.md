@@ -46,3 +46,43 @@
 - [Not Done] (1:20:56) Sentry Alerts & Logs
 - [x] (1:22:05) 404 Not Found page
 - [x] (1:27:12) Next.js Metadata
+
+
+
+# Next.js + PostgreSQL + Drizzle ORM - Nextjs Full Stack Project
+ 🔗 Course Resources: https://github.com/gitdagray/nextjs-full-stack-project
+
+ 🔗 Course Youtube: [link](https://www.youtube.com/watch?v=tiSm8ZjFQP0)
+
+Next.js + PostgreSQL + Drizzle ORM - Nextjs Full Stack Project
+
+- [ ] (0:00:00) Intro
+- [ ] (0:01:12) Tech Stack
+- [ ] (0:01:32) User Stories Checklist
+- [ ] (0:04:06) Create a Free Neon Account & Project
+- [ ] (0:09:45) Upgrading to Ne t.js 15 Stable Version
+- [ ] (0:13:21) Installing Drizzle ORM with Neon Postgres
+- [ ] (0:15:55) Create a database connection
+- [ ] (0:19:27) Create database table schemas
+- [ ] (0:27:55) Define table relationships
+- [ ] (0:30:56) Create a migration function
+- [ ] (0:34:30) Create the drizzle config
+- [ ] (0:36:49) Add scripts to package.json
+- [ ] (0:37:55) Generate and Migrate database changes
+- [ ] (0:40:18) Adding Data
+
+📚 Tutorial References:
+🔗 Next.js: https://nextjs.org/
+
+🔗 ShadCN/ui: https://ui.shadcn.com/
+
+🔗 Sentry Next.js: https://bit.ly/sentry-nextjs-dg
+
+🔗 Tailwind CSS: https://tailwindcss.com/
+
+🔗 TypeScript: https://www.typescriptlang.org/
+
+🔗 Neon Postgres: https://fyi.neon.tech/davegray
+🔗 Neon Postgres Get Stated: https://neon.tech/docs/get-started-with-neon/signing-up
+
+🔗 Kinde Auth: https://kinde.com/dgray-nextjsstack/
