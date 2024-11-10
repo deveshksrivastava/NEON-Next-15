@@ -4,6 +4,12 @@
 
 In this series, we’ll build a full stack web application for a Computer Repair Shop that manages customers and repair tickets.
 
+### Key Feature
+ - Server side rendernig/SEO support for search engine, and blend client and server side, featch data from server and render on the client pages.
+ - File based routing - No react-router-dom, here based on the file and folders, [id], (), less code, understandable
+ - Build FUll stack framework - add backend code, connect to DB, get and store data into tables,  file system, authentiation
+ - npx create-next-app@latest  + node.
+
 ### Gratitude 
 
 This Next.js Full Stack Project tutorial series is made possible by [Sentry](https://bit.ly/try-sentry-dg). I consider [Sentry](https://bit.ly/try-sentry-dg) to be an essential part of my tech stack, and we will be using [Sentry](https://bit.ly/try-sentry-dg) in this Next.js full stack project.
@@ -97,13 +103,13 @@ Steps
     Ok to proceed? (y)
 
     √ What is your project named? ... next15-repair-shop
-    √ Would you like to use TypeScript? ... No / Yes
-    √ Would you like to use ESLint? ... No / Yes
-    √ Would you like to use Tailwind CSS? ... No / Yes
-    √ Would you like your code inside a `src/` directory? ... No / Yes
-    √ Would you like to use App Router? (recommended) ... No / Yes
-    √ Would you like to use Turbopack for next dev? ... No / Yes
-    √ Would you like to customize the import alias (@/* by default)? ... No / Yes
+    √ Would you like to use TypeScript? ... Yes
+    √ Would you like to use ESLint? ... Yes
+    √ Would you like to use Tailwind CSS? ... Yes
+    √ Would you like your code inside a `src/` directory? ...Yes
+    √ Would you like to use App Router? (recommended) ... Yes
+    √ Would you like to use Turbopack for next dev? ... Yes
+    √ Would you like to customize the import alias (@/* by default)? ... No ****
     Creating a new Next.js app in D:\sites\Mandir-Next.js\next15-repair-shop.
 ```
  -  npx shadcn@latest init
