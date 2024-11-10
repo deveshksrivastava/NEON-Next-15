@@ -15,3 +15,5 @@ INSERT INTO tickets (
     (5, 'Printer setup', 'Customer needs help setting up a new printer.', false, 'unassigned', now(), now()),
     (5, 'Blue screen error', 'Customer''s computer is showing a blue screen error frequently.', false, 'unassigned', now(), now()),
     (5, 'Memory upgrade', 'Customer requested an upgrade to their computer’s RAM.', false, 'unassigned', now(), now());
+
+    

@@ -117,5 +117,13 @@ Steps
  -   npm i -D drizzle-kit tsx dotenv --legacy-peer-dep
  - https://console.neon.tech/app/projects/red-sea-65341444/quickstart (DATA BASE LINK)
  - npm run db:genrate
+ - npm run db:migrate
+
+```
+
+## Login 
+```
+ - https://www.youtube.com/watch?v=GjVcSpKCoB8&t=2042s
+ - https://techbluehost.kinde.com/admin
 
 ```
