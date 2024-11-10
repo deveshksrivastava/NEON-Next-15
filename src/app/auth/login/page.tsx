@@ -1,10 +1,10 @@
-// import SignIn from '@/components/Signin'
+import SignIn from '@/components/SignIn'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      {/* <SignIn /> */}
+      <SignIn />
       signin
     </div>
   )

@@ -125,13 +125,19 @@ export default async function Dashboard() {
  - Using the redirect function (Server Components) ,  redirect('/login')
  - Using the native History API, const searchParams = useSearchParams(), window.history.pushState(), keep browser history. so we can go back.
 
-```
-visaukjob(uid)
-jqIxgdcGvv5MSfNa(pwd)
-89VsAFrLeMcGkyy3
-AesM5YGvIb8m5SPK(newdb)
+## Connect MongodB
+ - https://www.youtube.com/watch?v=TUhNiEan_UQ
+ - https://www.youtube.com/watch?v=RSabWmFz0VM - Next js 15 stable Auth js v5/Next-auth mongodb rtk query Part-57
+ - https://github.com/webshakil/authjs-v-5
 
-mongodb://atlas-sql-6730da8a8fb0476be4e6abab-ffxxt.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin
-mongodb+srv://visaukjob:Swindon@123@cluster0.ffxxt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+API Query 
 
 ```
+{ 
+"name" : "mask", 
+"email" : "mask@gmail.com", 
+"password" : "mk@k122334"
+}
+
+```
+ - GET: http://localhost:3000/api/users

@@ -1,6 +1,7 @@
 
 import client from "../../../lib/mongodb";
 import { GetServerSideProps } from 'next';
+import UserTable from '@/components/UserTable';
 
 export const metadata = {
     title: "Home",
@@ -14,7 +15,7 @@ async function getUsers() {
 
 export default async function Home(){
     const usersResults = await getUsers()
-    console.log('usersResults',usersResults)
+    // console.log('usersResults',usersResults)
    
     return (
         <div>
@@ -24,14 +25,18 @@ export default async function Home(){
             </p>
             <ul>
                 {usersResults.map((user:any) => (
+                    
                     <li key={user._id}>
-                        <h2>{user.name}</h2>
-                        <h3>{user.email}</h3>
-                        <p>{user.password}</p>
+                        <span>{user.name}</span> ||
+                        <span>{user.email}</span> ||
+                        <span>{user.password}</span>
                         <br/>
                     </li>
                 ))}
             </ul>
+
+            <hr/>
+            <UserTable />
         </div>
     );
 };
