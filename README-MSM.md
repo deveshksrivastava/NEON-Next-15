@@ -29,11 +29,21 @@ You also find a list official docs: https://nextjs.org/docs/app/api-reference/fi
 
 ### Dynamic Routing: 
 ```
+[slug]
+[...slug]
+(admin)
+
 blog/post-1  or blog/post-2
 blog
  [slug] - placeholder
     page.js  - BlogPage({params}){} - passing value from the url, {params.slug}
 page.js
+
+
+app/blog/[slug]/page.js       	  { slug: string }
+app/shop/[...slug]/page.js	      { slug: string[] }
+app/shop/[[...slug]]/page.js      { slug?: string[] }
+app/[categoryId]/[itemId]/page.js	{ categoryId: string, itemId: string }
 ```
 
 ### How to get the path
@@ -141,3 +151,12 @@ API Query
 
 ```
  - GET: http://localhost:3000/api/users
+
+
+```
+
+## Setting up JSON server 
+ - npm install -g json-server
+ - Adding db.json file 
+ - change in package.json -  "json-server": "json-server --watch db.json --port 3001"
+ - npm run json-server  
