@@ -173,3 +173,12 @@ API Query
  - change in package.json -  "json-server": "json-server --watch db.json --port 3001"
  - npm run json-server  
  - https://github.com/typicode/json-server
+
+ ## Loading data and streaming
+  - Data loading can be achived with loading.tsx page with slow api and Suspense
+  - Streming is better then traditional SSR? - bit by bit loading video
+     - better user experience
+     - faster intial page load
+     - enhanced SEO
+     - less data usage
+     - more complex
