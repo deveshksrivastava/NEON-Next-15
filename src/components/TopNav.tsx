@@ -24,7 +24,7 @@ export default function Navbar({ session }: { session: any }) {
             <>
               <div>
                 <Image
-                  src={session.user?.image || "/images/default.png"}
+                  src={session.user?.image || "/images/home-img.jpg"}
                   width={40}
                   height={40}
                   className="rounded-full"

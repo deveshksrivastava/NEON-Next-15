@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider";
 import ClientProvider from "@/components/ClientProvider";
+import useServerDarkMode from "@/hooks/use-server-dark-mode";
+
 
 import "./globals.css";
 
@@ -31,8 +33,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const session = 'ancckdjfjdkfj-session'
+  const theme = useServerDarkMode()
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={'theme-' + theme} suppressHydrationWarning >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

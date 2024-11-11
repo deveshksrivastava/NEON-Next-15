@@ -182,3 +182,7 @@ API Query
      - enhanced SEO
      - less data usage
      - more complex
+
+## Learning 
+ - Udemy link - https://tcsglobal.udemy.com/course/master-nextjs-full-stack/learn/lecture/42070932#overview 
+ - git hub - https://github.com/piotr-jura-udemy/nextjs-finance-app/blob/main/components/button.js

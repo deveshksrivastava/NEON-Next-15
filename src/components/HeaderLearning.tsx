@@ -6,8 +6,11 @@ import { ModeToggle } from '@/components/ModeToggle';
 import { LogoutLink } from '@kinde-oss/kinde-auth-nextjs/components';
 import { Button } from '@/components/ui/button';
 import { NavButton } from '@/components/NavButton';
+import DarkModeToggle from '@/components/Dark-mode-toggle';
+import useServerDarkMode from '@/hooks/use-server-dark-mode'
 
 export function HeaderLearning() {
+    const theme = useServerDarkMode()
     return (
         <header className="animate-slide bg-background h-12 p-2 border-b sticky top-0 z-20">
 
@@ -30,7 +33,9 @@ export function HeaderLearning() {
                     <NavButton href="/customers" label="Customers" icon={UsersRound} />
 
                     <ModeToggle />
-                    
+                    <div className="flex items-center space-x-4">
+                        <DarkModeToggle defaultMode={theme} />
+                    </div>
                     <Button
                         variant="ghost"
                         size="icon"
