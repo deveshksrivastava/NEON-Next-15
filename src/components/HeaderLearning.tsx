@@ -7,7 +7,7 @@ import { LogoutLink } from '@kinde-oss/kinde-auth-nextjs/components';
 import { Button } from '@/components/ui/button';
 import { NavButton } from '@/components/NavButton';
 
-export function Header() {
+export function HeaderLearning() {
     return (
         <header className="animate-slide bg-background h-12 p-2 border-b sticky top-0 z-20">
 
@@ -18,7 +18,7 @@ export function Header() {
 
                     <Link href="/home" className="flex justify-center items-center gap-2 ml-0" title="Home">
                         <h1 className="hidden sm:block text-xl font-bold m-0 mt-1">
-                            Computer Repair Shop
+                            Learning Computer
                         </h1>
                     </Link>
                 </div>

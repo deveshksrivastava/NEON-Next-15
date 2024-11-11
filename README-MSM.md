@@ -9,6 +9,8 @@ NextJS Essentials: https://github.com/mschwarzmueller/nextjs-complete-guide-cour
 Rest of the Course: https://github.com/mschwarzmueller/nextjs-course-code
 Discord: https://academind.com/community/
 
+https://tcsglobal.udemy.com/course/master-nextjs-full-stack/learn/lecture/41315982#overview
+
 ### installation packages
 ```
  - https://github.com/mschwarzmueller/nextjs-complete-guide-course-resources/blob/main/attachments/02-nextjs-essentials/lecture-specific/initdb.js
@@ -80,10 +82,18 @@ insted of height and with you can use the fill property, which will dynamically 
  - https://nextjs.org/docs/app/building-your-application/upgrading/app-router-migration
  - Link, image, page to app, Head/Metadata, Router(pages to app directory)
   - Hooks{next/navigation} - useRouter(), usePathname(), and useSearchParams().
-  - Data Fetching Methods - The pages directory uses getServerSideProps and getStaticProps to fetch data for pages. Inside the app directory, these previous data fetching functions are replaced with a simpler API built on top of fetch() and async React Server Components
-
+  - Data Fetching Methods - The pages directory uses getServerSideProps and getStaticProps to fetch data for pages. Inside the app directory, these previous data fetching functions are replaced with a simpler API built on top of fetch() and async 
+  
+ ## React Server Components with caching/memoization and revalidation
   ```
 export default async function Page() {
+ a) // npm run build && npm run dev - production build version, change in any will change change when only fetch is used 
+   const staticData = await fetch(`https://...`)
+
+   or top of page :
+   export const dynamic = 'force-dynamic'
+
+  b)
   // This request should be cached until manually invalidated.
   // Similar to `getStaticProps`.
   // `force-cache` is the default and can be omitted.
@@ -93,10 +103,11 @@ export default async function Page() {
   // Similar to `getServerSideProps`.
   const dynamicData = await fetch(`https://...`, { cache: 'no-store' })
  
+  c)
   // This request should be cached with a lifetime of 10 seconds.
   // Similar to `getStaticProps` with the `revalidate` option.
   const revalidatedData = await fetch(`https://...`, {
-    next: { revalidate: 10 },
+    next: { revalidate: 10 },      //3600 - 1hr
   })
  
   return <div>...</div>
@@ -139,6 +150,7 @@ export default async function Dashboard() {
  - https://www.youtube.com/watch?v=TUhNiEan_UQ
  - https://www.youtube.com/watch?v=RSabWmFz0VM - Next js 15 stable Auth js v5/Next-auth mongodb rtk query Part-57
  - https://github.com/webshakil/authjs-v-5
+ - https://github.com/hoangvvo/nextjs-mongodb-app/blob/v2/api-lib/middlewares/session.js (mongo, next)
 
 API Query 
 
@@ -160,3 +172,4 @@ API Query
  - Adding db.json file 
  - change in package.json -  "json-server": "json-server --watch db.json --port 3001"
  - npm run json-server  
+ - https://github.com/typicode/json-server

@@ -133,3 +133,18 @@ Steps
  - https://techbluehost.kinde.com/admin
 
 ```
+
+## Loading faster
+ - App router use hybrid aprovch for routing and navigation. on the server code get automaticall code-split by the route segement. On clinet it done with prefetches and caches. 
+ when we route to new page full page don't load, but only the route changes. and faster.
+ prefetches - load page in background, only show which is visiable in viewport, in developmenet its false. 
+ caching - story the page and route and server quickly, with no deleay. 
+
+ ```
+ npm run build
+ npm run dev
+
+ do any change in text of page, stop and run 'npm run dev', change will not be picked up.
+ Until we refresh the page.
+
+ ```
