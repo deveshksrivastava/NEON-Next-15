@@ -186,3 +186,10 @@ API Query
 ## Learning 
  - Udemy link - https://tcsglobal.udemy.com/course/master-nextjs-full-stack/learn/lecture/42070932#overview 
  - git hub - https://github.com/piotr-jura-udemy/nextjs-finance-app/blob/main/components/button.js
+
+ ## Fake API 
+  - https://jsonfakery.com/blog-posts
+  - https://sampleapis.com/api-list/movies
+  - https://jsonplaceholder.typicode.com/
+  - https://graphqlzero.almansi.me/#example-top
+  - https://meme-api.com/gimme

@@ -8,7 +8,7 @@ export default function ClientProvider({ session, children }: { session: any; ch
   return (
     <Provider store={store}>
         <Navbar session={session} />
-      {children}
+        {children}
     </Provider>
   );
 }

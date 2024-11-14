@@ -26,6 +26,9 @@ export default async function LRLayout({
                     <Link href="/loading-ui/suspence" className="flex justify-center items-center gap-2 ml-0" title="Home">
                         <h1 className="hidden sm:block text-xl font-bold m-0 mt-1">Suspence</h1>
                     </Link>
+                    <Link href="/error" className="flex justify-center items-center gap-2 ml-0" title="Home">
+                        <h1 className="hidden sm:block text-xl font-bold m-0 mt-1">Error</h1>
+                    </Link>
                 </ul>
             </nav>
         </div>

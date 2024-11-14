@@ -13,7 +13,7 @@ export default function Navbar({ session }: { session: any }) {
           <p className="text-white text-xl font-bold">Logo</p>
         </Link>
         <div className="flex space-x-4 items-center">
-          <Link href="/">
+          <Link href="/home">
             <p className="text-white hover:text-blue-200">Home</p>
           </Link>
           <Link href="/dashboard">
