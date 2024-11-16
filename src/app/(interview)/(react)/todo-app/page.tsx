@@ -78,7 +78,6 @@ export default function page() {
         <div>Completed Task : {checkedCount}</div>
       </div>
 
-
     </div>
   )
 }

@@ -29,6 +29,7 @@ export function Header() {
                 { id: 1, title: "Form", url: "/form" },
                 { id: 2, title: "Excel Sheet", url: "/excel" },
                 { id: 3, title: "Google Search", url: "/googleseach" },
+                { id: 5, title: "Start Rating", url: "/star-rating" },
             ]
         },
         {
