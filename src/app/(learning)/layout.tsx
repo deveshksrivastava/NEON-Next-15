@@ -1,3 +1,4 @@
+import { Header } from "@/components/header"
 import { HeaderLearning } from "@/components/HeaderLearning"
 import Link from "next/link"
 
@@ -8,10 +9,10 @@ export default async function LRLayout({
 }) {
     return (
         <div className="mx-auto w-full max-w-7xl h-svh">
-            <HeaderLearning />
-            <div className="px-4 py-2 max-h-screen">
-                {children}
-            </div>
+            <Header />
+                <div className="px-4 py-2 max-h-screen">
+                    {children}
+                </div>
             <nav>
                 <ul className="flex gap-4 bottom-0 bg-gray-200 w-full items-center justify-center text-center">
                     <Link href="/data-fetching" className="flex justify-center items-center gap-2 ml-0" title="Home">

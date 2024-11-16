@@ -4,7 +4,7 @@ type Props = {
 
 export default function Card(props:Props) {
 const {movie} = props
-console.log('movie',movie)
+// console.log('movie',movie)
   return (
     <div className="bg-gray-500 p-4"> 
         <div>{movie?.title}</div> 

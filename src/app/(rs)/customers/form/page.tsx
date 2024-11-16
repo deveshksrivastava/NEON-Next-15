@@ -59,8 +59,8 @@ export default async function CustomerFormPage({
             }
             const customer = await getCustomer(ticket.customerId)
             // return ticket form 
-            console.log('ticket: ', ticket)
-            console.log('customer: ', customer)
+            // console.log('ticket: ', ticket)
+            // console.log('customer: ', customer)
         }
     } catch (e) {
         if (e instanceof Error) {

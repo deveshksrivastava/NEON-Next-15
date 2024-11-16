@@ -1,4 +1,5 @@
 import Link from "next/link"
+import LoginPage from "./(rs)/login/page";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Link href="tel:5555555555" className="hover:underline">
         555-555-5555
       </Link>
+      <LoginPage/>
     </div>
 
   </main>

@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 export default function ClientProvider({ session, children }: { session: any; children: React.ReactNode }) {
   return (
     <Provider store={store}>
-        <Navbar session={session} />
+        {/* <Navbar session={session} /> */}
         {children}
     </Provider>
   );
