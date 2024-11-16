@@ -17,7 +17,7 @@ export function Header() {
         {
             id: 1,
             title: "Home",
-            url: "/",
+            url: "/home",
             dropdown: null
         },
         {
@@ -63,7 +63,7 @@ export function Header() {
         {
             id: 6,
             title: "Contact",
-            url: "/",
+            url: "/contact",
             dropdown: null
         },
        

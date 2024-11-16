@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <section className="py-10 bg-gray-900 sm:pt-16 lg:pt-24">
+    <section className="py-10 bg-gray-900 sm:pt-16 lg:pt-24 mt-24">
     <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12">
             <div>
@@ -130,7 +130,7 @@ export default function Footer() {
                 </li>
             </ul>
   
-            <p className="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2">AAA © Copyright 2021, All Rights Reserved by Postcraft</p>
+            <p className="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2">AAA © Copyright 2021, All Rights Reserved by TechBar</p>
         </div>
     </div>
   </section>

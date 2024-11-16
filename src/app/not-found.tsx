@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer"
+import { Header } from "@/components/header"
 import Image from "next/image"
 
 export const metadata = {
@@ -7,7 +9,8 @@ export const metadata = {
 export default function NotFound() {
     return (
         <div className="px-2 w-full">
-            <div className="mx-auto py-4 flex flex-col justify-center items-center gap-4">
+           <Header />
+            <div className="mx-auto py-4 flex flex-col justify-center items-center gap-4 mt-24">
                 <h2 className="text-2xl">Page Not Found</h2>
                 <Image
                     className="m-0 rounded-xl"
@@ -20,6 +23,7 @@ export default function NotFound() {
                     title="Page Not Found"
                 />
             </div>
+            <Footer />  
         </div>
     )
 }
