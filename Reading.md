@@ -2,6 +2,7 @@
 ### getServerSideProps	getStaticProps vs Next.js15
 
 ```
+ {/* https://github.com/sudheerj/reactjs-interview-questions/blob/master/README.md */}
 Understanding getServerSideProps and getStaticProps in Next.js
 
 Next.js provides two primary methods for fetching data on the server side: getServerSideProps and getStaticProps. These functions are essential for building dynamic, SEO-friendly, and performant web applications.

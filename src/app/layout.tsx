@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider";
 import ClientProvider from "@/components/ClientProvider";
 import useServerDarkMode from "@/hooks/use-server-dark-mode";
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css'
 
 
 import "./globals.css";
