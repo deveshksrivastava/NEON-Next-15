@@ -60,20 +60,20 @@ export default function page() {
         <input type="text" placeholder="Add Todo" className="border border-black" onChange={(e)=>setText(e.target.value)} />
         <span className="border border-black ml-2 w-16 flex items-center justify-center bg-fuchsia-400" onClick={addHandler}>+</span>
       </div>
-
+      <br />
       {
         add && add.map((todo, index)=>{
           return (
-          <div className="flex gap-6">
-            <input type="checkbox" checked={todo.checked} onChange={()=>handleChecked(index)} /> 
-            <div key={index}>{todo.text}</div>  
-            <span onClick={()=>deleteHandler(index)}>delete</span>
+          <div className="flex gap-20 border border-black p-2 ">
+            <input type="checkbox" checked={todo.checked} onChange={()=>handleChecked(index)}  /> 
+            <div key={index} className={todo.checked ?"line-through":""} >{todo.text}</div>  
+            <span className="border border-black ml-2 w-16 flex items-center justify-center bg-fuchsia-400" onClick={()=>deleteHandler(index)}>delete</span>
           </div> 
           )
         })
       }
 
-      <div>
+      <div className="flex gap-6 pt-10">
         <div>Total Task : {add.length}</div>
         <div>Completed Task : {checkedCount}</div>
       </div>
