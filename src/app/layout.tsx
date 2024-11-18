@@ -41,25 +41,25 @@ export default function RootLayout({
   const session = 'ancckdjfjdkfj-session'
   const theme = useServerDarkMode()
   return (
-    <html lang="en" className={'theme-' + theme} suppressHydrationWarning >
-    <head>
+    <html lang="en"  >
+      <head>
         {/* <!-- Includes all JS & CSS for the JavaScript Data Grid --> */}
         <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
-    </head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-                <ClientProvider session={session}>
-                  <ThemeProvider
-                    attribute="class"
-                    defaultTheme="system"
-                    enableSystem
-                    disableTransitionOnChange
-                  >
-                    {children}
-                  </ThemeProvider>
-                </ClientProvider>
-        
+        <ClientProvider session={session}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </ClientProvider>
+
       </body>
     </html>
   );

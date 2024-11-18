@@ -1,7 +1,7 @@
 
 'use client'
 import React, { useState } from 'react';
-import { HomeIcon, File, UsersRound, LogOut  } from 'lucide-react';
+import { HomeIcon, File, UsersRound, LogOut } from 'lucide-react';
 import Link from 'next/link';
 import { ModeToggle } from '@/components/ModeToggle';
 import { LogoutLink } from '@kinde-oss/kinde-auth-nextjs/components';
@@ -13,64 +13,64 @@ export function Header() {
     const [isExpanded, setIsExpanded] = useState(false);
     const [isExpandedLanguage, setIsExpandedLanguage] = useState(false);
     var mainMenu =
-    [
-        {
-            id: 1,
-            title: "Home",
-            url: "/home",
-            dropdown: null
-        },
-        {
-            id: 2,
-            title: "React",
-            url: "/react",
-            dropdown: [
-                { id: 1, title: "Todo App", url: "/todo-app" },
-                { id: 1, title: "Form", url: "/form" },
-                { id: 2, title: "Excel Sheet", url: "/excel" },
-                { id: 3, title: "Google Search", url: "/googleseach" },
-                { id: 5, title: "Start Rating", url: "/star-rating" },
-            ]
-        },
-        {
-            id: 3,
-            title: "Language",
-            url: "/language",
-            dropdown: [
-                { id: 1, title: "javascript", url: "/javascript" },
-                { id: 2, title: "typescript", url: "/typescript" },
-                { id: 3, title: "C#", url: "/csharp" },
-                { id: 3, title: "C# Oops", url: "/Oops" },
-            ]
-        },
-        {
-            id: 4,
-            title: "Design",
-            url: "/design",
-            dropdown: [
-                { id: 1, title: "FE Design", url: "/fedesign" },
-                { id: 2, title: "Backend Desing", url: "/bkdesign" },
-                { id: 3, title: "System Design", url: "/systemdesign" },
-            ]
-        },
-        {
-            id: 5,
-            title: ".Net Core",
-            url: "/dotnet",
-            dropdown: [
-                { id: 1, title: ".Net Core", url: "/dotnet" },
-                { id: 2, title: "Node.js", url: "/node" },
-            ]
-        },
-        {
-            id: 6,
-            title: "Contact",
-            url: "/contact",
-            dropdown: null
-        },
-       
-    ]
-      
+        [
+            {
+                id: 1,
+                title: "Home",
+                url: "/home",
+                dropdown: null
+            },
+            {
+                id: 2,
+                title: "React",
+                url: "/react",
+                dropdown: [
+                    { id: 1, title: "Todo App", url: "/todo-app" },
+                    { id: 1, title: "Form", url: "/form" },
+                    { id: 2, title: "Excel Sheet", url: "/excel" },
+                    { id: 3, title: "Google Search", url: "/googleseach" },
+                    { id: 5, title: "Start Rating", url: "/star-rating" },
+                ]
+            },
+            {
+                id: 3,
+                title: "Language",
+                url: "/language",
+                dropdown: [
+                    { id: 1, title: "javascript", url: "/javascript" },
+                    { id: 2, title: "typescript", url: "/typescript" },
+                    { id: 3, title: "C#", url: "/csharp" },
+                    { id: 3, title: "C# Oops", url: "/Oops" },
+                ]
+            },
+            {
+                id: 4,
+                title: "Design",
+                url: "/design",
+                dropdown: [
+                    { id: 1, title: "FE Design", url: "/fedesign" },
+                    { id: 2, title: "Backend Desing", url: "/bkdesign" },
+                    { id: 3, title: "System Design", url: "/systemdesign" },
+                ]
+            },
+            {
+                id: 5,
+                title: ".Net Core",
+                url: "/dotnet",
+                dropdown: [
+                    { id: 1, title: ".Net Core", url: "/dotnet" },
+                    { id: 2, title: "Node.js", url: "/node" },
+                ]
+            },
+            {
+                id: 6,
+                title: "Contact",
+                url: "/contact",
+                dropdown: null
+            },
+
+        ]
+
     return (
         <header className="animate-slide bg-background h-12 border-b sticky top-0 z-20">
 
@@ -88,10 +88,12 @@ export function Header() {
 
                 <div className='flex items-center gap-8'>
                     {
-                            mainMenu.map((items) => (
+                        mainMenu.map((items) => (
+                            <div key={items.id}>
                                 <SubMenu items={items} />
-                            )
-                            )
+                            </div>
+                        )
+                        )
                     }
                 </div>
 
