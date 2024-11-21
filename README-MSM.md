@@ -168,16 +168,80 @@ How to run mongodb api
  - Create route PAGE in API folder for GET/POST/DELETE/PATCH
  - Next.js 15 use the seperate  
  - GET: http://localhost:3000/api/users
+    ```
+    app.get('/api/todos', async (req, res) => {
+        try {
+            const todos = await Todo.find();
+            res.json(todos);
+        } catch (error) {
+            res.status(500).json({ message: error.message });
+        }
+    });
+    ```
  - POST (Postman) : http://localhost:3000/api/register or http://localhost:3000/api/users
     ```    
-        { 
-          "name" : "Vinod", 
-          "email" : "vinod@gmail.com", 
-          "password" : "v@k122334"
-        }
+      app.post('/api/todos', async (req, res) => {
+          const todo = new Todo({
+              text: req.body.text,
+              completed: req.body.completed
+          });
+
+          try {
+              const savedTodo = await todo.save();
+              res.status(201).json(savedTodo);
+          } catch (error) {
+              res.status(400).json({ message: error.message });
+          }
+      });
       ```
  - Delete (Postman) : http://localhost:3000/api/users?id=1
- - Patch (Postman) :
+    ```
+      app.delete('/api/todos/:id', async (req, res) => {
+          try {
+              await Todo.findByIdAndDelete(req.params.id);
+              res.status(204).send();
+          } catch (error) {
+              res.status(400).json({ message: error.message });
+          }
+      });
+
+    ```
+ - Put (Postman) :
+    ```
+    app.put('/api/todos/:id', async (req, res) => {
+        try {
+            const updatedTodo = await Todo.findByIdAndUpdate(req.params.id, req.body, { new: true });
+            res.json(updatedTodo);
+        } catch (error) {
+            res.status(400).json({ message: error.message });
+        }
+    });
+    ```
+  - PATCH - Update a Todo (Partial Update)
+    ```
+    app.patch('/api/todos/:id', async (req, res) => {
+        try {
+            const updatedTodo = await Todo.findByIdAndUpdate(req.params.id, req.body, { new: true });
+            res.json(updatedTodo);
+        } catch (error) {
+            res.status(400).json({ message: error.message });
+        }
+    });
+    ```
+  - DELETE - Remove a Todo
+    ```
+    app.delete('/api/todos/:id', async (req, res) => {
+        try {
+            await Todo.findByIdAndDelete(req.params.id);
+            res.status(204).send();
+        } catch (error) {
+            res.status(400).json({ message: error.message });
+        }
+    });
+
+    ```
+
+  
 
  
  HOW TO CALL FROM PAGE:

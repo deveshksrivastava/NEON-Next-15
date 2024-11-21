@@ -9,6 +9,8 @@ import 'primeicons/primeicons.css'
 import { AgGridReact } from 'ag-grid-react'; // React Data Grid Component
 import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the Data Grid
 import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the Data Grid
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 import "./globals.css";
@@ -42,6 +44,7 @@ export default function RootLayout({
   const theme = useServerDarkMode()
   return (
     <html lang="en"  >
+
       <head>
         {/* <!-- Includes all JS & CSS for the JavaScript Data Grid --> */}
         <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
@@ -57,6 +60,19 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
+            <ToastContainer
+              position="top-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
+            <ToastContainer />
           </ThemeProvider>
         </ClientProvider>
 

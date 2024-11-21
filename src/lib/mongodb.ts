@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { use } from 'react';
 
 const dbConnect = async () => {
   if (mongoose.connection.readyState >= 1) return;
@@ -12,10 +13,12 @@ const dbConnect = async () => {
   }
 
   const uri = `mongodb+srv://${username}:${password}@cluster0.z4fif.mongodb.net/${dbName}?retryWrites=true&w=majority`;
-
-  return mongoose.connect(uri, {
-  
-  });
+  const opts = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    bufferCommands: false,
+  };
+  return mongoose.connect(uri, opts);
 };
 
 export default dbConnect;

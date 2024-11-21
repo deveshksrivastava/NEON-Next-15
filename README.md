@@ -19,8 +19,6 @@ This Next.js Full Stack Project tutorial series is made possible by [Sentry](htt
 ## Lesson Help
 If you get stuck on any lesson in the series, (1) navigate to the course branch for your current lesson and (2) view or (3) download the code for more help.
 
-![Preview of downloading code in github](./github.png?raw=true)
-
 ## Prerequisites
 In this series, I’ll assume you have an intermediate skill level and are not a beginner. You should have some experience with React and understand a full stack project includes both client and server code environments. Prior experience with Next.js is not required.
 
@@ -52,6 +50,7 @@ npm run build
 ### 📚 References
 - 🔗 [Next.js](https://nextjs.org/)
 - 🔗 [React](https://react.dev/)
+- 🔗 [Best Icons](https://react-icons.github.io/react-icons)
 - 🔗 [TypeScript](https://www.typescriptlang.org/)
 - 🔗 [TailwindCSS](https://tailwindcss.com/)
 - 🔗 [ShadCN/ui](https://ui.shadcn.com/)
@@ -65,7 +64,14 @@ npm run build
 - 🔗 [TanStack Table](https://tanstack.com/table/latest)
 - 🔗 [Vercel](https://vercel.com/home)
 
----
+### 📚 NextJS References link
+- 🔗 [NextJS Essentials](https://github.com/mschwarzmueller/nextjs-complete-guide-course-resources)
+- 🔗 [Rest of the Course](https://github.com/mschwarzmueller/nextjs-course-code)
+- 🔗 [NextJS Essentials](https://github.com/mschwarzmueller/nextjs-complete-guide-course-resources)
+- 🔗 [Udemy Vidio](https://tcsglobal.udemy.com/course/master-nextjs-full-stack/learn/lecture/41315982#overview)
+- 🔗 [GitHub](https://github.com/mschwarzmueller/nextjs-complete-guide-course-resources/blob/main/attachments/02-nextjs-essentials/lecture-specific/initdb.js)
+- 🔗 [Material CURD Table](https://codesandbox.io/p/sandbox/react-app-9gwt5?file=%2Fpackage.json%3A21%2C36)
+
 
 ### Author Links
 
@@ -87,7 +93,6 @@ npm run build
 - 🔗 [LinkedIn](https://www.linkedin.com/in/devesh/)
 - 🔗 [Blog](https://devesh)
 
----
 
 ### 🎓 Academic Honesty
 
@@ -121,17 +126,16 @@ Steps
 ```
  -   npm i drizzle-orm @neondatabase/serverless --legacy-peer-dep
  -   npm i -D drizzle-kit tsx dotenv --legacy-peer-dep
- - https://console.neon.tech/app/projects/red-sea-65341444/quickstart (DATA BASE LINK)
- - npm run db:genrate
- - npm run db:migrate
+ -   https://console.neon.tech/app/projects/red-sea-65341444/quickstart (DATA BASE LINK)
+ -   npm run db:genrate
+ -   npm run db:migrate
 
 ```
 
 ## Login 
 ```
- - https://www.youtube.com/watch?v=GjVcSpKCoB8&t=2042s
- - https://techbluehost.kinde.com/admin
-
+- 🔗 [Youtube Link](https://www.youtube.com/watch?v=GjVcSpKCoB8&t=2042s)
+- 🔗 [kinde Link](https://techbluehost.kinde.com/admin)
 ```
 
 ## Loading faster
