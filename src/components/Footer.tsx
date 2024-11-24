@@ -29,7 +29,7 @@ export default function Footer() {
 
                         <ul className="mt-8 space-y-4">
                             <li>
-                                <a href="#" title="" className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Customer Support </a>
+                                <Link href="/javascript" title="" className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Javascript basic </Link>
                             </li>
                             <li>
                                 <a href="#" title="" className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Delivery Details </a>

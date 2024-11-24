@@ -48,6 +48,7 @@ export default function RootLayout({
       <head>
         {/* <!-- Includes all JS & CSS for the JavaScript Data Grid --> */}
         <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+        <link href="/public/css/gihub.css" rel="stylesheet" type="text/css"></link>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
